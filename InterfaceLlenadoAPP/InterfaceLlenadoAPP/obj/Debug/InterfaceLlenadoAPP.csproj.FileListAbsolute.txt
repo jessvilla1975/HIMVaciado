@@ -1,0 +1,14 @@
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\bin\Debug\InterfaceLlenadoAPP.exe.config
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\bin\Debug\InterfaceLlenadoAPP.exe
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\bin\Debug\InterfaceLlenadoAPP.pdb
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\bin\Debug\CircularProgressBar.dll
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\bin\Debug\WinFormAnimation.dll
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\bin\Debug\CircularProgressBar.xml
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\obj\Debug\InterfaceLlenadoAPP.csproj.AssemblyReference.cache
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\obj\Debug\InterfaceLlenadoAPP.Form1.resources
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\obj\Debug\InterfaceLlenadoAPP.Properties.Resources.resources
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\obj\Debug\InterfaceLlenadoAPP.csproj.GenerateResource.cache
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\obj\Debug\InterfaceLlenadoAPP.csproj.CoreCompileInputs.cache
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\obj\Debug\Interfac.2D794130.Up2Date
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\obj\Debug\InterfaceLlenadoAPP.exe
+C:\Users\Jess\Desktop\Proyecto_Llenado\InterfaceLlenadoAPP\InterfaceLlenadoAPP\obj\Debug\InterfaceLlenadoAPP.pdb
