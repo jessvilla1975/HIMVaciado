@@ -49,10 +49,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.DatossRecibidos = new System.Windows.Forms.TextBox();
             this.stop = new System.Windows.Forms.Button();
+            this.ledon = new System.Windows.Forms.PictureBox();
+            this.ledoff = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ledon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ledoff)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -286,12 +290,36 @@
             this.stop.UseVisualStyleBackColor = false;
             this.stop.Click += new System.EventHandler(this.stop_Click);
             // 
+            // ledon
+            // 
+            this.ledon.Image = global::InterfaceLlenadoAPP.Properties.Resources.VERDE;
+            this.ledon.Location = new System.Drawing.Point(246, 373);
+            this.ledon.Name = "ledon";
+            this.ledon.Size = new System.Drawing.Size(57, 52);
+            this.ledon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ledon.TabIndex = 7;
+            this.ledon.TabStop = false;
+            // 
+            // ledoff
+            // 
+            this.ledoff.Image = global::InterfaceLlenadoAPP.Properties.Resources.off;
+            this.ledoff.Location = new System.Drawing.Point(338, 374);
+            this.ledoff.Name = "ledoff";
+            this.ledoff.Size = new System.Drawing.Size(57, 51);
+            this.ledoff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ledoff.TabIndex = 6;
+            this.ledoff.TabStop = false;
+            this.ledoff.WaitOnLoad = true;
+            this.ledoff.Click += new System.EventHandler(this.ledoff_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(966, 450);
+            this.Controls.Add(this.ledon);
+            this.Controls.Add(this.ledoff);
             this.Controls.Add(this.stop);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.progreso);
@@ -307,6 +335,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ledon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ledoff)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,6 +360,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button stop;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.PictureBox ledoff;
+        private System.Windows.Forms.PictureBox ledon;
     }
 }
 

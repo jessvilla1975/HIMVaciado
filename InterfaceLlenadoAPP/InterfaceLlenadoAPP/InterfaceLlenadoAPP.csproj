@@ -88,5 +88,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ButtonoFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ButtonOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\VERDE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\verdeof.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\verdeOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\led1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\green.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

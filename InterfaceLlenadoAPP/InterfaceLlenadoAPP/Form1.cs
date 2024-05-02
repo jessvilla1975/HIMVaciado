@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace InterfaceLlenadoAPP
 {
@@ -30,7 +31,8 @@ namespace InterfaceLlenadoAPP
         {
             baudio.Text = "9600";
             barra.Value = 0;
-
+            ledoff.Image = Properties.Resources.off;
+            ledon.Image = Properties.Resources.VERDE;
             String[] lista = SerialPort.GetPortNames();
             puerto.Items.AddRange(lista);
             chart1.Invoke((MethodInvoker)(() => chart1.Series["Vaciado"].Points.AddXY(0,0)));
@@ -56,6 +58,9 @@ namespace InterfaceLlenadoAPP
                 serial.PortName = puerto.Text;
                 serial.BaudRate = Convert.ToInt32(baudio.Text);
                 serial.Open();
+                ledon.Image = Properties.Resources.green;
+                ledoff.Image = Properties.Resources.off;
+
                 for (int i = 1; i <= 100; i++)
                 {
                     barra.Value = i;
@@ -121,7 +126,9 @@ namespace InterfaceLlenadoAPP
                 serial.PortName = puerto.Text;
                 serial.BaudRate = Convert.ToInt32(baudio.Text);
                 serial.Open();
-                for(int i = 1; i <= 100; i++)
+                ledon.Image = Properties.Resources.green;
+
+                for (int i = 1; i <= 100; i++)
                 {
                     barra.Value = i;
                     barra.Text = i.ToString();
@@ -159,6 +166,8 @@ namespace InterfaceLlenadoAPP
 
                 serial.Close();
                 chart1.Invoke((MethodInvoker)(() => chart1.Series["Vaciado"].Points.AddXY(0, 0)));
+                ledoff.Image = Properties.Resources.on;
+                ledon.Image = Properties.Resources.VERDE;
 
 
 
@@ -172,6 +181,11 @@ namespace InterfaceLlenadoAPP
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ledoff_Click(object sender, EventArgs e)
         {
 
         }
