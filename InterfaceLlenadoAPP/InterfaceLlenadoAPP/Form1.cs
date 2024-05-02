@@ -91,31 +91,41 @@ namespace InterfaceLlenadoAPP
                 
                     delegate
                     {
-                        DatossRecibidos.Text += datos + "L/min" + Environment.NewLine;
+                        DatossRecibidos.Text += datos + "     ml/min" + Environment.NewLine;
                     }
 
 
                 ));
 
-                int value = Convert.ToInt32(datos);
+                Double value = Convert.ToDouble(datos);
                 if(value >= progreso.Minimum && value <= progreso.Maximum)
                 {
-                    progreso.Invoke((MethodInvoker)(() => {
-                        progreso.Value = value;
-                        
+                    /*for (int i = 0; i < progreso.Maximum; i++)
+                    {
+                        progreso.Value = i;
+                    }*/
+                    
+                    //    progreso.Value = Convert.ToInt32(datos);
+                    
 
-                    }));
+
+                
 
                 }
 
                 //chart1.Series["Analogo"].Points.AddY(value);
-                chart1.Invoke((MethodInvoker)(() => chart1.Series["Vaciado"].Points.AddY(value)));
+                chart1.Invoke((MethodInvoker)(() => {
+                   
+                    chart1.Series["Vaciado"].Points.AddY(value/100);
+                }));
 
 
 
 
 
-                }
+
+
+            }
 
         }
 
@@ -186,6 +196,16 @@ namespace InterfaceLlenadoAPP
         }
 
         private void ledoff_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progreso_Click(object sender, EventArgs e)
         {
 
         }
