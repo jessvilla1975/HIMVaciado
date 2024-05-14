@@ -55,19 +55,10 @@ namespace InterfaceLlenadoAPP
         {
             try
             {
-                serial.PortName = puerto.Text;
-                serial.BaudRate = Convert.ToInt32(baudio.Text);
-                serial.Open();
+                
                 ledon.Image = Properties.Resources.green;
                 ledoff.Image = Properties.Resources.off;
-
-                for (int i = 1; i <= 100; i++)
-                {
-                    barra.Value = i;
-                    barra.Text = i.ToString();
-
-                }
-
+                serial.WriteLine("00");
 
             }
             catch (Exception error)
@@ -79,55 +70,42 @@ namespace InterfaceLlenadoAPP
 
         private void serial_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-          
-            while (serial.IsOpen && serial.BytesToRead > 0)
+            try
             {
-                string datos = serial.ReadLine();
-           
-
-                serial.ReadTimeout = 500;
-
-                DatossRecibidos.Invoke(new MethodInvoker(
-                
-                    delegate
-                    {
-                        DatossRecibidos.Text += datos + "     ml/min" + Environment.NewLine;
-                    }
-
-
-                ));
-
-                Double value = Convert.ToDouble(datos);
-                if(value >= progreso.Minimum && value <= progreso.Maximum)
+                while (serial.IsOpen && serial.BytesToRead > 0)
                 {
-                    /*for (int i = 0; i < progreso.Maximum; i++)
+                    string datos = serial.ReadLine();
+
+                    serial.ReadTimeout = 500;
+
+                    DatossRecibidos.Invoke(new MethodInvoker(
+                        delegate
+                        {
+                            DatossRecibidos.Text += datos + "     ml/min" + Environment.NewLine;
+                        }
+                    ));
+
+                    double value;
+                    if (double.TryParse(datos, out value))
                     {
-                        progreso.Value = i;
-                    }*/
-                    
-                    //    progreso.Value = Convert.ToInt32(datos);
-                    
-
-
-                
-
+                        // Agregar el valor al gráfico
+                        chart1.Invoke((MethodInvoker)(() => {
+                            chart1.Series["Vaciado"].Points.AddY(value / 100);
+                        }));
+                    }
+                    else
+                    {
+                        // Si la conversión falla, puedes manejarlo aquí
+                        MessageBox.Show("No se pudo convertir los datos a un número.");
+                    }
                 }
-
-                //chart1.Series["Analogo"].Points.AddY(value);
-                chart1.Invoke((MethodInvoker)(() => {
-                   
-                    chart1.Series["Vaciado"].Points.AddY(value/100);
-                }));
-
-
-
-
-
-
-
             }
-
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -173,7 +151,7 @@ namespace InterfaceLlenadoAPP
         {
             try
             {
-
+                serial.WriteLine("11111");
                 serial.Close();
                 chart1.Invoke((MethodInvoker)(() => chart1.Series["Vaciado"].Points.AddXY(0, 0)));
                 ledoff.Image = Properties.Resources.on;
