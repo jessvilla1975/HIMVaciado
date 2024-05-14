@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{A226FE82-E32F-4B4D-A4B0-3D00DFE03A48}|InterfaceLlenadoAPP\\InterfaceLlenadoAPP.csproj|solutionrelative:interfacellenadoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A226FE82-E32F-4B4D-A4B0-3D00DFE03A48}|InterfaceLlenadoAPP\\InterfaceLlenadoAPP.csproj|C:\\Users\\Jess\\Desktop\\Proyecto_Llenado\\HIMVaciado\\InterfaceLlenadoAPP\\interfacellenadoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A226FE82-E32F-4B4D-A4B0-3D00DFE03A48}|InterfaceLlenadoAPP\\InterfaceLlenadoAPP.csproj|c:\\users\\jess\\desktop\\proyecto_llenado\\himvaciado\\interfacellenadoapp\\interfacellenadoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A226FE82-E32F-4B4D-A4B0-3D00DFE03A48}|InterfaceLlenadoAPP\\InterfaceLlenadoAPP.csproj|solutionrelative:interfacellenadoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A226FE82-E32F-4B4D-A4B0-3D00DFE03A48}|InterfaceLlenadoAPP\\InterfaceLlenadoAPP.csproj|c:\\users\\jess\\desktop\\proyecto_llenado\\himvaciado\\interfacellenadoapp\\interfacellenadoapp\\progressbarvertical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A226FE82-E32F-4B4D-A4B0-3D00DFE03A48}|InterfaceLlenadoAPP\\InterfaceLlenadoAPP.csproj|solutionrelative:interfacellenadoapp\\progressbarvertical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Jess\\Desktop\\Proyecto_Llenado\\HIMVaciado\\InterfaceLlenadoAPP\\InterfaceLlenadoAPP\\Form1.cs",
-              "RelativeDocumentMoniker": "InterfaceLlenadoAPP\\Form1.cs",
-              "ToolTip": "C:\\Users\\Jess\\Desktop\\Proyecto_Llenado\\HIMVaciado\\InterfaceLlenadoAPP\\InterfaceLlenadoAPP\\Form1.cs",
-              "RelativeToolTip": "InterfaceLlenadoAPP\\Form1.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAowFcAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T06:41:54.659Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -42,8 +33,34 @@
               "ToolTip": "C:\\Users\\Jess\\Desktop\\Proyecto_Llenado\\HIMVaciado\\InterfaceLlenadoAPP\\InterfaceLlenadoAPP\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "InterfaceLlenadoAPP\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T06:11:27.788Z",
+              "WhenOpened": "2024-05-14T07:13:36.349Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Jess\\Desktop\\Proyecto_Llenado\\HIMVaciado\\InterfaceLlenadoAPP\\InterfaceLlenadoAPP\\Form1.cs",
+              "RelativeDocumentMoniker": "InterfaceLlenadoAPP\\Form1.cs",
+              "ToolTip": "C:\\Users\\Jess\\Desktop\\Proyecto_Llenado\\HIMVaciado\\InterfaceLlenadoAPP\\InterfaceLlenadoAPP\\Form1.cs",
+              "RelativeToolTip": "InterfaceLlenadoAPP\\Form1.cs",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAwwKsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T06:57:32.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProgressBarVertical.cs",
+              "DocumentMoniker": "C:\\Users\\Jess\\Desktop\\Proyecto_Llenado\\HIMVaciado\\InterfaceLlenadoAPP\\InterfaceLlenadoAPP\\ProgressBarVertical.cs",
+              "RelativeDocumentMoniker": "InterfaceLlenadoAPP\\ProgressBarVertical.cs",
+              "ToolTip": "C:\\Users\\Jess\\Desktop\\Proyecto_Llenado\\HIMVaciado\\InterfaceLlenadoAPP\\InterfaceLlenadoAPP\\ProgressBarVertical.cs",
+              "RelativeToolTip": "InterfaceLlenadoAPP\\ProgressBarVertical.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T05:17:33.733Z",
+              "EditorCaption": ""
             }
           ]
         }

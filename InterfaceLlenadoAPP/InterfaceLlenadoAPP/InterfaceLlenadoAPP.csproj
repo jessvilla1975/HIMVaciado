@@ -60,6 +60,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgressBarVertical.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -117,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tanques.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tamque.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
