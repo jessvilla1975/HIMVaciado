@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace InterfaceLlenadoAPP
@@ -77,6 +78,23 @@ namespace InterfaceLlenadoAPP
             }
         }
         private int contador = 0;
+        private void actualizarProgress(int inicio, int fin)
+        {
+            for (int i = inicio; i >= fin; i--) 
+            {
+                int progressValue = i;
+
+                progressBarVertical1.Invoke((MethodInvoker)(() =>
+                {
+                    progressBarVertical1.Maximum = 100;
+                    progressBarVertical1.Value = progressValue;
+                    Thread.Sleep(150);
+
+                }));
+
+            }
+
+        }
 
         private void serial_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
@@ -120,85 +138,59 @@ namespace InterfaceLlenadoAPP
                             if (contador == 3)
                             {
                                 
-                                for (int i = 100; i >= 90; i--)
-                                {
-                                    int progressValue = i;
-                                    
-                                    progressBarVertical1.Invoke((MethodInvoker)(() =>
-                                    {
-                                        progressBarVertical1.Maximum = 100;
-                                        progressBarVertical1.Value = progressValue;
-                                        Thread.Sleep(150);
-
-                                    }));
-                                    
-                                }
+                                actualizarProgress(100, 90);
                             }
                             else if (contador == 6)
                             {
                                 
-                                for (int i = 90; i >= 80; i--)
-                                {
-                                    int progressValue = i;
-
-                                    progressBarVertical1.Invoke((MethodInvoker)(() =>
-                                    {
-                                        progressBarVertical1.Maximum = 100;
-                                        progressBarVertical1.Value = progressValue;
-                                        Thread.Sleep(150);
-                                    }));
-                                    
-                                }
+                                actualizarProgress(90, 80);
                             }
                             else if (contador == 8)
                             {
-                                
-                                for (int i = 80; i >= 70; i--)
-                                {
-                                    int progressValue = i;
-
-                                    progressBarVertical1.Invoke((MethodInvoker)(() =>
-                                    {
-                                        progressBarVertical1.Maximum = 100;
-                                        progressBarVertical1.Value = progressValue;
-                                        Thread.Sleep(150);
-                                    }));
-
-                                }
+                                serial.WriteLine("11111");
+                                actualizarProgress(80, 70);
                             }
                             else if (contador == 11)
                             {
-                                
-                                
-                                for (int i = 70; i >= 60; i--)
-                                {
-                                    int progressValue = i;
 
-                                    progressBarVertical1.Invoke((MethodInvoker)(() =>
-                                    {
-                                        progressBarVertical1.Maximum = 100;
-                                        progressBarVertical1.Value = progressValue;
-                                        Thread.Sleep(150);
-                                    }));
-
-                                }
+                                actualizarProgress(70, 60);
                             }
                             else if (contador == 14)
                             {
-                                serial.WriteLine("11111");
-                                for (int i = 60; i >= 50; i--)
-                                {
-                                    int progressValue = i;
 
-                                    progressBarVertical1.Invoke((MethodInvoker)(() =>
-                                    {
-                                        progressBarVertical1.Maximum = 100;
-                                        progressBarVertical1.Value = progressValue;
-                                        Thread.Sleep(150);
-                                    }));
+                                actualizarProgress(60, 50);
 
-                                }
+
                             }
+                            else if (contador == 17)
+                            {
+
+                                actualizarProgress(50, 40);
+                            }
+                            else if (contador == 19)
+                            {
+
+                                actualizarProgress(40, 30);
+
+
+                            }
+                            else if (contador == 21)
+                            {
+
+                                actualizarProgress(30, 20);
+                            }
+                            else if (contador == 23)
+                            {
+
+                                actualizarProgress(20, 10);
+                            }
+                            else if (contador == 27)
+                            {
+
+                                actualizarProgress(10, 0);
+                            }
+
+
 
                         }
                         else
